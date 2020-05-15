@@ -20,12 +20,12 @@ To test the complaint page we first need to create a database so give execute pe
 Now type in the complains along with the username
 ![](ScreenShots/hackermode1-2.png)
 
-To check the mysql database login as CHiefCommander in mysql:
+To check the mysql database login as ChiefCommander in mysql:
 The database along with the complain has been registered.
 ![](ScreenShots/hackermode1-3.png)
 
 
-Goto Sub-Task2 directory and type the command "docker build -it sub-task2 . " as root user like this:
+Goto Sub-Task2 directory and type the command "docker build -t sub-task2 . " as root user like this:
 ![](ScreenShots/subtask2-1.png)
 
 Run the sub-task2 and everything including the crontasks are set:
