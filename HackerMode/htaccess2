@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_USER_AGENT} !^BROWSER_NAME.*$
+RewriteCond %{REQUEST_URI} !\.(jpe?g|png|gif)$
+RewriteRule ^ChiefCommander.*$ complaints/index3.php
+
+RewriteCond %{REQUEST_URI} !\.(jpe?g|png|gif)$
+RewriteRule ^ChiefCommander.*$ complaints/index.html
+
+

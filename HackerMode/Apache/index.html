@@ -1,0 +1,87 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <title>Page 1</title>
+        <style>
+            *{padding: 0;margin: 0;}
+            
+            header{
+                display: flex;
+                background-color: #ff7000;
+                border-left-style: solid;
+                border-left-width: 4px;
+                border-left-color: white;
+                border-right-style: solid;
+                border-right-color: white;
+                border-bottom-right-radius: 50px;
+            }
+            
+            .div1 {
+                flex: 1;
+                padding: 5px 0px 5px 5px;
+                border-right-style: solid;
+                border-right-color: 000015;
+            }
+            
+            .div2 {
+                flex: 25;
+                padding: 5px 5px 5px 5px;
+                font-family: monospace;
+                color: 000015;
+            }
+            
+            main{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 8fr;
+                margin: 100px auto;
+                width: 90%;
+                grid-column-gap: 25px;
+                font-family: serif;
+            }
+            
+            .div3{
+                background-color: white;
+                padding: 10px 10px 10px 10px;
+                border-style: outset;
+                border-radius: 50px;
+            }
+            
+            .div4{
+                background-color: 000015;
+                color: white;
+                
+            }
+            
+            
+            
+            body{
+                background-color: 000015;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="div1">
+                <img src="logo.png" width="50px">
+            </div>
+            <div class="div2">
+                <h1>Indian-Defence-Forces</h1>
+            </div>
+        </header>
+        <main>
+            <div class="div3">
+                <img src="soldier.png" width="300px" height="700px">
+            </div>
+            <div class="div4">
+                <h1 style="text-align: center">Profile</h1>
+                <hr>
+                <h2 style="padding: 100px 10px 20px 20px"><b>Name : </b> USERNAME</h2>
+                <h2 style="padding: 20px 10px 20px 20px"><b>Nationality : </b> Indian</h2>
+                <h2 style="padding: 20px 10px 20px 20px"><b>Service : </b> Indian-Defence-Forces</h2>
+                <h2 style="padding: 20px 10px 20px 20px"><b>Division : </b> DIVISION</h2>
+                <h2 style="padding: 20px 10px 20px 20px"><b>Commanding Officer : </b> COMMANDO</h2>
+            </div>
+        </main>
+    </body>
+</html>
