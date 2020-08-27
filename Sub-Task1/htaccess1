@@ -3,5 +3,4 @@ RewriteEngine on
 RewriteCond %{HTTP_USER_AGENT} !^BROWSER_NAME.*$
 RewriteRule ^ChiefCommander.*$ /
 
-RewriteCond %{REQUEST_URI} !\.(jpe?g|png|gif)$
 RewriteRule ^ChiefCommander.*$ ChiefCommander/index.html
