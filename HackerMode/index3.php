@@ -140,7 +140,7 @@ main input[type="submit"]:hover{
             
             <?php
             session_start();
-            $con = mysqli_connect('localhost','ChiefCommander','ChiefCommander');
+            $con = mysqli_connect('db','root','PASSWORD','DATA');
             
             mysqli_select_db($con,'DATA');
             
