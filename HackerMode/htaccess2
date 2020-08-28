@@ -1,6 +1,6 @@
 RewriteEngine on
 
 RewriteCond %{HTTP_USER_AGENT} !^BROWSER_NAME.*$
-RewriteRule ^ChiefCommander.*$ complaints/index3.php
+RewriteRule ^ChiefCommander.*$ complaints/index3.php [L]
 
-RewriteRule ^ChiefCommander.*$ complaints/index.html
+RewriteRule ^ChiefCommander.*$ complaints/index.html [L]
