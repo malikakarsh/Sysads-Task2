@@ -1,16 +1,17 @@
 version: '3.3'
 services:
   db:
-    image: mysql
-    restart: always
+    image: mysql:5.7
     volumes:
-      - Mysql:/var/lib/mysql
+      - ./Mysql:/docker-entrypoint-initdb.d/:ro
     environment:
       MYSQL_ROOT_PASSWORD: PASSWORD
           
   apache:
-    image: apache2
+    build: Apache/.
     depends_on:
+      - db
+    links:
       - db
     ports:
       - 3333:80
